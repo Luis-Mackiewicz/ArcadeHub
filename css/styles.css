@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*cores do site */
+/*Fontes de texto*/
+/*Tamanho*/
+Body {
+  background-image: linear-gradient(#FFA500, red);
+  width: 100%;
+  padding: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

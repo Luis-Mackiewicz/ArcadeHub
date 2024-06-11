@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cores do site */
+
+$Primaria1: #FFA500;
+$Primaria2: #FFB84D;
+$Primaria3: #CC8400;
+
+$Secundaria1: #9b59b6;
+$Secundaria2: #af7ac5;
+$Secundaria3: #884ea0;
+
+$Terciaria1: #8BC34A;
+$Terciaria2: #AED581;
+$Terciaria3: #689F38;
+
+
+
+/*Fontes de texto*/
+$fonte1: Tahoma, Arial;
+$fonte2: Arial, Verdana;
+
+
+/*Tamanho*/
+$t1 : 18px;
+
+Body{
+    background-image: linear-gradient($Primaria1, red);
+    width: 100%;
+    padding: 100%;
+}
+
+
+
+
+
+
+
+
+
