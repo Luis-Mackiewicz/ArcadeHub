@@ -10,25 +10,15 @@
 /*Fontes de texto*/
 /*Tamanho*/
 Body {
-  background-image: linear-gradient(#FF9800, #ffa726, #F44336);
-  width: 100vw;
   height: 100vh;
-}
-
-h1 {
-  font-family: "Racing Sans One";
-}
-
-p {
-  font-family: "Archivo black";
-}
-
-img {
-  max-width: 100%;
-}
-
-header {
-  background-color: #424242;
+  width: 100vw;
+  font-family: "Archivo black", "tahoma";
+  font-size: 18px;
+  color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background-image: linear-gradient(#F44336, #ffa726, #FF9800);
 }
 
 /*# sourceMappingURL=styles.css.map */
