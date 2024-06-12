@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/*fontes Lato, Bangers e Press Start 2P*/
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*fontes Lato, Archivo Black, Racing Sans One*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Racing+Sans+One&display=swap');
 /*cores do site */
 
 $L1 : #FF9800;
-$L2 :  #FFA726;
+$L2 :  #ffa726;
 $V1 :   #F44336;
 $V2 :   #E57373;
 $C1 :   #424242;
@@ -21,7 +21,7 @@ $B2 :   #F5F5F5;
 
 
 /*Fontes de texto*/
-$f1: "Bangers";
+$f1: "Racing Sans One";
 $f2: "Archivo black";
 $f3: "lato";
 
@@ -43,8 +43,12 @@ p{
     font-family: $f2;
 }
 
-
-
+img{
+    max-width: 100%;
+}
+header{
+ background-color: $C1;
+}
 
 
 
