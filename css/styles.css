@@ -15,10 +15,25 @@ Body {
   font-family: "Archivo black", "tahoma";
   font-size: 18px;
   color: #FFFFFF;
-  display: grid;
-  place-items: center;
-  place-content: center;
   background-image: linear-gradient(#F44336, #ffa726, #FF9800);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #424242;
+}
+.header ul {
+  list-style: none;
+}
+
+.header-logo {
+  height: 125px;
+  width: 125px;
+}
+
+.header-nav {
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

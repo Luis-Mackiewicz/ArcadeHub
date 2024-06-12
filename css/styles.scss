@@ -36,19 +36,29 @@ Body{
     font-family: $f2;
     font-size: $t1; 
     color: $B1;
-    display: grid;
-    place-items: center;
-    place-content: center;
+    background-image: linear-gradient($V1, $L2, $L1);
     
-    background-image: linear-gradient($V1,$L2,$L1);
      
     
 
 }
 
 
+.header{
+    width: 100%;
+    position:fixed;
+    background-color:$C1;
 
+    ul{
+        list-style: none;
+    }
+}
 
-
-
+.header-logo {
+    height: 125px;
+    width: 125px;    
+}
+.header-nav {
+    float: right;
+}
 
