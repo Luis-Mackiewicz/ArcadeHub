@@ -9,17 +9,15 @@
 
 /*cores do site */
 
-$Primaria1: #FFA500;
-$Primaria2: #FFB84D;
-$Primaria3: #CC8400;
+$L1 : #FF9800;
+$L2 :  #FFA726;
+$V1 :   #F44336;
+$V2 :   #E57373;
+$C1 :   #424242;
+$C2 :   #616161;
+$B1 :   #FFFFFF;
+$B2 :   #F5F5F5;
 
-$Secundaria1: #9b59b6;
-$Secundaria2: #af7ac5;
-$Secundaria3: #884ea0;
-
-$Terciaria1: #8BC34A;
-$Terciaria2: #AED581;
-$Terciaria3: #689F38;
 
 
 
@@ -33,7 +31,7 @@ $fonte3: "Press Start 2P";
 $t1 : 18px;
 
 Body{
-    background-image: linear-gradient($Primaria1, red );
+    background-image: linear-gradient($L1,$L2, $V1, $V2 );
     width: 100vw;
     height: 100vh;
 }

@@ -10,7 +10,7 @@
 /*Fontes de texto*/
 /*Tamanho*/
 Body {
-  background-image: linear-gradient(#FFA500, red);
+  background-image: linear-gradient(#FF9800, #FFA726, #F44336, #E57373);
   width: 100vw;
   height: 100vh;
 }
