@@ -5,8 +5,7 @@
 }
 
 /*fontes Lato, Bangers e Press Start 2P*/
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /*cores do site */
 
 $L1 : #FF9800;
@@ -22,26 +21,26 @@ $B2 :   #F5F5F5;
 
 
 /*Fontes de texto*/
-$fonte1: "Lato";
-$fonte2: "Bangers";
-$fonte3: "Press Start 2P";
+$f1: "Bangers";
+$f2: "Archivo black";
+$f3: "lato";
 
 
 /*Tamanho*/
 $t1 : 18px;
 
 Body{
-    background-image: linear-gradient($L1,$L2, $V1, $V2 );
+    background-image: linear-gradient($L1,$L2, $V1, );
     width: 100vw;
     height: 100vh;
 }
 
 h1{
-    font-family: $fonte3;
+    font-family: $f1;
 }
 
 p{
-    font-family: $fonte1;
+    font-family: $f2;
 }
 
 
