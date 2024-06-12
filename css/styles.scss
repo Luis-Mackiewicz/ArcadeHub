@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/*fontes Lato, Bangers e Press Start 2P*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&display=swap');
+
 /*cores do site */
 
 $Primaria1: #FFA500;
@@ -21,20 +24,27 @@ $Terciaria3: #689F38;
 
 
 /*Fontes de texto*/
-$fonte1: Tahoma, Arial;
-$fonte2: Arial, Verdana;
+$fonte1: "Lato";
+$fonte2: "Bangers";
+$fonte3: "Press Start 2P";
 
 
 /*Tamanho*/
 $t1 : 18px;
 
 Body{
-    background-image: linear-gradient($Primaria1, red);
-    width: 100%;
-    padding: 100%;
+    background-image: linear-gradient($Primaria1, red );
+    width: 100vw;
+    height: 100vh;
 }
 
+h1{
+    font-family: $fonte2;
+}
 
+p{
+    font-family: $fonte1;
+}
 
 
 

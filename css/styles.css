@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*fontes Lato, Bangers e Press Start 2P*/
 /*cores do site */
 /*Fontes de texto*/
 /*Tamanho*/
 Body {
   background-image: linear-gradient(#FFA500, red);
-  width: 100%;
-  padding: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Bangers";
+}
+
+p {
+  font-family: "Lato";
 }
 
 /*# sourceMappingURL=styles.css.map */
