@@ -15,7 +15,7 @@ Body {
   font-family: "Archivo black", "tahoma";
   font-size: 18px;
   color: #FFFFFF;
-  background-image: linear-gradient(#F44336, #ffa726, #FF9800);
+  background-color: #FF9800;
 }
 
 .header {
@@ -23,8 +23,25 @@ Body {
   position: fixed;
   background-color: #424242;
 }
+.header .header-nav {
+  float: right;
+}
 .header ul {
   list-style: none;
+  margin-top: 50px;
+}
+.header ul li {
+  display: inline-block;
+}
+.header ul li a {
+  margin: 20px;
+  padding: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all s;
+}
+.header ul li a:hover {
+  background-color: #E57373;
 }
 
 .header-logo {
@@ -32,8 +49,27 @@ Body {
   width: 125px;
 }
 
-.header-nav {
-  float: right;
+.banner img {
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 20 px auto;
+}
+.container img {
+  height: 275px;
+  width: 275px;
+}
+
+.flex {
+  display: flex;
+}
+.flex .flex-card {
+  width: 24%;
+  margin: 3px;
+  box-shadow: 0 0 0 10px #424242;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

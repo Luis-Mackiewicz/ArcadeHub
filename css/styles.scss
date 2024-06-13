@@ -36,11 +36,10 @@ Body{
     font-family: $f2;
     font-size: $t1; 
     color: $B1;
-    background-image: linear-gradient($V1, $L2, $L1);
-    
+    background-color: #FF9800;
      
     
-
+    
 }
 
 
@@ -48,9 +47,32 @@ Body{
     width: 100%;
     position:fixed;
     background-color:$C1;
-
+    
+    .header-nav {
+        float: right;
+        
+    }
     ul{
         list-style: none;
+        margin-top: 50px;
+        
+        li{
+            display: inline-block;
+            a{
+                margin: 20px;
+                padding:10px;
+                color: $B1;
+                text-decoration:none;
+                transition: all s;
+                
+                &:hover{
+                    background-color: $V2;
+                }
+                
+                
+                
+            }
+        }
     }
 }
 
@@ -58,7 +80,28 @@ Body{
     height: 125px;
     width: 125px;    
 }
-.header-nav {
-    float: right;
+
+.banner{
+    img {
+        width: 100%;
+    }
 }
 
+.container{
+    width: 1000px;
+    margin: 20 px auto;
+    img{
+        height: 275px;
+        width: 275px;
+    }
+}
+
+.flex {
+    display: flex;
+    & &-card {
+        width: 24%;
+        margin: 3px;
+        box-shadow: 0 0 0 10px $C1;
+        border-radius: 5px;
+    }
+}
