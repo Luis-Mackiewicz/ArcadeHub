@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*fontes Lato, Archivo Black, Racing Sans One*/
@@ -25,83 +24,29 @@ $f1: "Racing Sans One" , "verdana";
 $f2: "Archivo black" , "tahoma";
 $f3: "lato" , "arial";
 
+    .header{
 
-/*Tamanho*/
-$t1 : 18px;
-
-
-Body{
-    height: 100vh;
-    width: 100vw;
-    font-family: $f2;
-    font-size: $t1; 
-    color: $B1;
-    background-color: #FF9800;
-     
-    
-    
-}
-
-
-.header{
-    width: 100%;
-    position:fixed;
-    background-color:$C1;
-    
-    .header-nav {
-        float: right;
-        
-    }
-    ul{
-        list-style: none;
-        margin-top: 50px;
-        
-        li{
-            display: inline-block;
-            a{
-                margin: 20px;
-                padding:10px;
-                color: $B1;
-                text-decoration:none;
-                transition: all s;
-                
-                &:hover{
-                    background-color: $V2;
-                }
-                
-                
-                
+        background:$C1;
+        box-shadow: 0 0  16px $C2;
+        width: 100%;
+        position: fixed;
+        padding: 15px;
+        box-sizing: border-box;
+    & &-logo {
+        float: left;
+        img {
+            width: 100px;
+        }
             }
+    & &-menu {
+        float: right;
+        border: 1px solid $C1;
+        background: $C1;
+        img {
+            width: 35px;
         }
     }
-}
+    
 
-.header-logo {
-    height: 125px;
-    width: 125px;    
 }
-
-.banner{
-    img {
-        width: 100%;
-    }
-}
-
-.container{
-    width: 1000px;
-    margin: 20 px auto;
-    img{
-        height: 275px;
-        width: 275px;
-    }
-}
-
-.flex {
-    display: flex;
-    & &-card {
-        width: 24%;
-        margin: 3px;
-        box-shadow: 0 0 0 10px $C1;
-        border-radius: 5px;
-    }
-}
+/*Tamanho*/

@@ -2,74 +2,34 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /*fontes Lato, Archivo Black, Racing Sans One*/
 /*cores do site */
 /*Fontes de texto*/
-/*Tamanho*/
-Body {
-  height: 100vh;
-  width: 100vw;
-  font-family: "Archivo black", "tahoma";
-  font-size: 18px;
-  color: #FFFFFF;
-  background-color: #FF9800;
-}
-
 .header {
+  background: #424242;
+  box-shadow: 0 0 16px #616161;
   width: 100%;
   position: fixed;
-  background-color: #424242;
+  padding: 15px;
+  box-sizing: border-box;
 }
-.header .header-nav {
+.header .header-logo {
+  float: left;
+}
+.header .header-logo img {
+  width: 100px;
+}
+.header .header-menu {
   float: right;
+  border: 1px solid #424242;
+  background: #424242;
 }
-.header ul {
-  list-style: none;
-  margin-top: 50px;
-}
-.header ul li {
-  display: inline-block;
-}
-.header ul li a {
-  margin: 20px;
-  padding: 10px;
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: all s;
-}
-.header ul li a:hover {
-  background-color: #E57373;
+.header .header-menu img {
+  width: 35px;
 }
 
-.header-logo {
-  height: 125px;
-  width: 125px;
-}
-
-.banner img {
-  width: 100%;
-}
-
-.container {
-  width: 1000px;
-  margin: 20 px auto;
-}
-.container img {
-  height: 275px;
-  width: 275px;
-}
-
-.flex {
-  display: flex;
-}
-.flex .flex-card {
-  width: 24%;
-  margin: 3px;
-  box-shadow: 0 0 0 10px #424242;
-  border-radius: 5px;
-}
+/*Tamanho*/
 
 /*# sourceMappingURL=styles.css.map */
