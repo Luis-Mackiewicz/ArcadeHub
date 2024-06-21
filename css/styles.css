@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* Estilos para páginas de jogos */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Racing+Sans+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fontes Lato, Archivo Black, Racing Sans One */
+/* Cores do site */
+/* Fontes de texto */
+.navbar {
+  background: #424242 !important;
+  font-family: "Archivo black", "tahoma";
+  box-shadow: 0 0 10px 0 #ffffff;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+.navbar .navbar-toggler {
+  background: #ffffff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand img {
+  width: 90px;
+}
+
+body {
+  background-image: url(../imagens/CoolerBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-style: "Racing Sans One", "verdana";
+}
+body h1 {
+  font-family: "lato", "arial";
+}
+body h2 {
+  font-family: "Archivo black", "tahoma";
+}
+
+/* Estilos para os cards */
+.card {
+  background-color: #FF914D;
+  text-align: center;
+  box-shadow: #f5f5f5;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.btn-primary {
+  background-color: #ffa726;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f44336;
+}
+
+footer {
+  background-color: #424242;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+footer .social-icons {
+  list-style: none;
+  padding: 0;
+}
+footer .social-icons li {
+  display: inline;
+  margin: 0 10px;
+}
+footer .social-icons li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .social-icons li a img {
+  width: 30px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos para os cards da equipe */
+.team-card {
+  border: none;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #FF914D;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card .primeiros {
+  margin-top: 100px;
+}
+.team-card .ultimos {
+  margin-bottom: 100px;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.team-description {
+  color: #424242;
+}
+.team-description p {
+  margin: 5px 0;
+}
+
+.game-page .game-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.game-page .game-description {
+  margin-top: 20px;
+}
+.game-page .game-sidebar .sidebar-image, .game-page .game-sidebar .sidebar-video {
+  margin-bottom: 15px;
+}
+.game-page .game-sidebar .sidebar-image img, .game-page .game-sidebar .sidebar-video video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.game-page .btn-primary {
+  background-color: #FF914D;
+  border: none;
+}
+.game-page .btn-primary:hover {
+  background-color: #ffa726;
+}
+
+/*# sourceMappingURL=styles.css.map */
