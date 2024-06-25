@@ -1,0 +1,95 @@
+// Importação de fontes (exemplo com Google Fonts)
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variáveis de cores
+$cor-degrade-inicio: #FF6347;
+$cor-degrade-fim: #FFA500;
+$cor-header-footer: #A9A9A9;
+
+// Estilos globais
+body {
+    font-family: 'Roboto', sans-serif; // Aplicando a fonte Roboto
+    background: linear-gradient(to right, $cor-degrade-inicio, $cor-degrade-fim); // Fundo degradê para o corpo
+    color: #333; // Cor do texto global
+    margin: 0; // Remover margem padrão do corpo
+}
+
+// Estilo para o header
+header {
+    background-color: $cor-header-footer;
+    color: white; // Texto branco no header
+    padding: 10px 0;
+}
+
+// Estilo para o navbar
+.navbar {
+    background-color: $cor-header-footer;
+    margin-bottom: 20px; // Margem inferior para separar do conteúdo
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white; // Texto branco nos links do navbar
+}
+
+.navbar-nav {
+    margin-left: 0; // Alinhar itens do navbar à esquerda
+}
+
+// Estilo para o footer
+footer {
+    background-color: $cor-header-footer;
+    color: white; // Texto branco no footer
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; // Largura total da tela
+    position: fixed; // Fixa o footer na parte inferior da página
+    bottom: 0;
+    left: 0;
+}
+
+// Estilo para os links no footer
+footer a {
+    color: white; // Cor dos links no footer
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+// Estilo para o container principal
+.container {
+    text-align: center; // Centralizar o conteúdo
+    margin-top: 20px;
+}
+
+// Estilo específico para cards de jogos
+.card {
+    margin-bottom: 20px;
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body {
+        text-align: center; // Centralizar o texto dentro dos cards
+    }
+}
+
+// Estilo específico para o carousel
+.carousel {
+    margin-top: 20px;
+
+    .carousel-inner {
+        .carousel-item {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(100%); // Tornar os ícones das setas visíveis em fundos escuros
+    }
+}
