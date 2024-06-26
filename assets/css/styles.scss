@@ -1,52 +1,113 @@
-// Reset de estilos básico
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+$purple-start: #6b3ce6;
+$purple-end: #8e44ad; 
+$gray-bg: #a9a9a9;
+$white: #ffffff; 
+$orange: #ff8c00; 
+
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to bottom right, $purple-start, $purple-end);
+    color: $white; /* Cor padrão para o texto */
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+/* Estilizando a navegação (navbar) */
+.navbar {
+    background-color: $gray-bg; /* Fundo cinza */
 }
 
-header nav ul {
-    list-style-type: none;
+/* Estilizando links na navbar */
+.navbar-nav .nav-link {// Variáveis
+    $primary-color: #A9A9A9; // Cor primária para navbar e footer
+    $gradient-start: #FF4500; // Cor inicial do gradiente (laranja)
+    $gradient-end: #800080; // Cor final do gradiente (roxa)
+    $text-color-light: #FFFFFF; // Cor do texto clara
+    $text-color-accent: #FFA500; // Cor do texto alaranjada
+    $bg-color: linear-gradient(135deg, $gradient-start, $gradient-end); // Gradiente de fundo
+    
+    // Estilos Globais
+    body {
+        background: $bg-color;
+        color: $text-color-light;
+        font-family: Arial, sans-serif;
+    }
+    
+    // Estilos da Navbar
+    .navbar {
+        background-color: $primary-color;
+        .navbar-brand, .navbar-nav .nav-link {
+            color: $text-color-light;
+            &:hover {
+                color: $text-color-accent;
+            }
+        }
+    }
+    
+    // Estilos do Footer
+    footer {
+        background-color: $primary-color;
+        color: $text-color-light;
+        padding: 20px 0;
+        text-align: center;
+        .footer-icons {
+            a {
+                color: $text-color-light;
+                margin: 0 10px;
+                &:hover {
+                    color: $text-color-accent;
+                }
+            }
+        }
+    }
+    
+    // Estilos dos Jogos
+    .game-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        .card-title, .card-text {
+            color: $text-color-light;
+        }
+        .btn-primary {
+            background-color: $text-color-accent;
+            border: none;
+            &:hover {
+                background-color: darken($text-color-accent, 10%);
+            }
+        }
+    }
+    
+    // Estilos do Carrossel
+    .carousel-item {
+        img {
+            border-radius: 10px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+    }
+    
+    // Estilos para Botões
+    .btn-primary {
+        background-color: $text-color-accent;
+        border: none;
+        &:hover {
+            background-color: darken($text-color-accent, 10%);
+        }
+    }
+    
+    color: $white; /* Cor do texto branco */
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Estilizando o rodapé */
+footer {
+    background-color: $gray-bg; /* Fundo cinza */
+    color: $white; /* Cor do texto branco */
 }
 
-.main-content {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.game-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+/* Links no rodapé */
+footer a {
+    color: $orange; /* Cor do texto laranja para links */
 }

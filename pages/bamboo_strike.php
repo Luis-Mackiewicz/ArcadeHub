@@ -1,12 +1,24 @@
-<?php include('../includes/header.php'); ?>
+<?php
+include_once '../inc/header.php';
 
-<section class="main-content">
-    <h1>BombSword</h1>
-    <img src="../assets/img/bombsword.jpg" alt="BombSword">
-    <p>Conceito de um guerreiro caçando fantasmas com uma espada explosiva.</p>
+// Buscar os detalhes do jogo BombSword da API
+$game_details = get_game_details('BombSword');
+?>
 
-    <!-- Adicione mais informações específicas do jogo aqui -->
+<main>
+    <section>
+        <h1><?php echo $game_details['title']; ?></h1>
+        <div class="game-details">
+            <img src="<?php echo $game_details['cover_image']; ?>" alt="<?php echo $game_details['title']; ?>">
+            <div class="description">
+                <p><?php echo $game_details['description']; ?></p>
+                <p>Classificação: <?php echo $game_details['rating']; ?></p>
+                <a href="<?php echo $game_details['play_link']; ?>" class="play-button">Jogar</a>
+            </div>
+        </div>
+    </section>
+</main>
 
-</section>
-
-<?php include('../includes/footer.php'); ?>
+<?php
+include_once '../inc/footer.php';
+?>

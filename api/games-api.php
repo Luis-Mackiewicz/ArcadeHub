@@ -1,53 +1,67 @@
 <?php
-// Dados dos jogos com base nas informações fornecidas
-$games = [
-    [
-        'nome' => 'BombSword',
-        'descricao' => 'Um guerreiro caçando fantasmas com uma espada explosiva no vale da morte.',
-        'imagem' => 'assets/imagens/BombSword/Luis_i2.jpg',
-        'desenvolvedor' => 'Luis Mackiewicz',
-        'personalidade' => 'Entusiasta da fantasia, criativo, sonhador.'
-    ],
-    [
-        'nome' => 'Bamboo Strike',
-        'descricao' => 'Design de um samurai cortando bambus com precisão, foco na fluidez dos movimentos.',
-        'imagem' => 'assets/imagens/Bamboo_Strike/samurai.jpg',
-        'desenvolvedor' => 'Pedro Rorato',
-        'personalidade' => 'Estudante de Tads, disciplinado, focado.'
-    ],
-    [
-        'nome' => 'Bubble Kid',
-        'descricao' => 'Criação de uma bolha mágica explorando um mundo colorido.',
-        'imagem' => 'assets/imagens/Bubble_Kid/bolha.jpg',
-        'desenvolvedor' => 'Gabriel de Barros',
-        'personalidade' => 'Sonhador, imaginativo e determinado.'
-    ],
-    [
-        'nome' => 'Desordeon',
-        'descricao' => 'Desenvolvimento de um jogo onde um macaco explora sua floresta em busca de bananas.',
-        'imagem' => 'assets/imagens/Desordeon/monkey.jpg',
-        'desenvolvedor' => 'Raul Miguel',
-        'personalidade' => 'Amante da natureza, curioso, alegre.'
-    ],
-    [
-        'nome' => 'ExplosionRace',
-        'descricao' => 'Criação de uma corrida emocionante com mecânicas desafiadoras de desvio de obstáculos.',
-        'imagem' => 'assets/imagens/ExplosionRace/ExplosionRace.png',
-        'desenvolvedor' => 'Kassio',
-        'personalidade' => 'Entusiasta de velocidade, gosta de desafios.'
-    ],
-    [
-        'nome' => 'Speed Bird',
-        'descricao' => 'Desenvolvimento de um jogo onde os jogadores assumem o papel de um pássaro veloz explorando os céus.',
-        'imagem' => 'assets/imagens/Speed_Bird/bird.jpg',
-        'desenvolvedor' => 'Samuel Ernandes',
-        'personalidade' => 'Otimista, confiante e objetivo.'
-    ]
-];
+// Função para buscar informações dos jogos
+function get_games() {
+    // Código para buscar e retornar os dados dos jogos da API
+    $games = [
+        [
+            'id' => 'BombSword',
+            'title' => 'BombSword',
+            'description' => 'Lute contra seus inimigos com sua espada e bombas!',
+            'cover_image' => 'assets/img/bombsword.jpg',
+            'rating' => '4.5',
+            'play_link' => 'games/BombSword.php'
+        ],
+        [
+            'id' => 'Bamboo_Strike',
+            'title' => 'Bamboo Strike',
+            'description' => 'Derrote seus oponentes com ataques de bambu!',
+            'cover_image' => 'assets/img/bamboo_strike.jpg',
+            'rating' => '4.2',
+            'play_link' => 'games/Bamboo_Strike.php'
+        ]
+    ];
+    return $games;
+}
 
-// Configuração do cabeçalho para retornar JSON
-header('Content-Type: application/json');
+// Função para buscar informações de um jogo específico
+function get_game_details($game_id) {
+    // Código para buscar e retornar os detalhes do jogo da API
+    $games = get_games();
+    foreach ($games as $game) {
+        if ($game['id'] == $game_id) {
+            return $game;
+        }
+    }
+    return null;
+}
 
-// Retornando os dados dos jogos como JSON
-echo json_encode($games);
-?>
+// Função para buscar os jogos em destaque
+function get_featured_games() {
+    // Código para buscar e retornar os jogos em destaque da API
+    $games = get_games();
+    $featured_games = array_slice($games, 0, 3);
+    return $featured_games;
+}
+
+// Função para buscar os membros da equipe
+function get_team_members() {
+    // Código para buscar e retornar os membros da equipe da API
+    $team_members = [
+        [
+            'name' => 'John Doe',
+            'role' => 'Desenvolvedor',
+            'image' => 'assets/img/john_doe.jpg'
+        ],
+        [
+            'name' => 'Jane Smith',
+            'role' => 'Designer',
+            'image' => 'assets/img/jane_smith.jpg'
+        ],
+        [
+            'name' => 'Mike Johnson',
+            'role' => 'Gerente de Projeto',
+            'image' => 'assets/img/mike_johnson.jpg'
+        ]
+    ];
+    return $team_members;
+}

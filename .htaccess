@@ -1,27 +1,15 @@
-# Ativar o motor de reescrita
+# Ativar o uso do arquivo .htaccess
 RewriteEngine On
 
-# Definir a raiz do documento
-RewriteBase /ArcadeHub/
+# Definir o diretório base
+RewriteBase /arcadehub/
 
-# Redirecionar para HTTPS se não estiver em ambiente local
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} !localhost
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Redirecionar todas as requisições para index.php, exceto diretórios existentes
-RewriteCond %{REQUEST_FILENAME} !-d
+# Redirecionar para index.php se a URL não corresponder a um arquivo existente
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [L]
 
-# Configuração para prevenir listagem de diretórios
-Options -Indexes
-
-# Configuração de segurança básica para PHP
-<IfModule mod_php7.c>
-    php_flag display_errors Off
-    php_value upload_max_filesize 32M
-    php_value post_max_size 32M
-    php_value max_execution_time 300
-    php_value max_input_time 300
-</IfModule>
+# Bloquear acesso a arquivos de configuração
+<FilesMatch "\.(ini|env|log|json|md|yml|yaml|twig)$">
+    Require all denied
+</FilesMatch>
