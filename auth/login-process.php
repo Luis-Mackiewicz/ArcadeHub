@@ -1,33 +1,34 @@
 <?php
-// Código para processar o login do usuário
+// Inicia a sessão
+session_start();
+
+// Dados fictícios de usuário (substitua com seu sistema de autenticação real)
+$valid_username = "usuario";
+$valid_password = "senha123";
+
+// Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recebe os dados do formulário
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Código para autenticar o usuário com o banco de dados ou API
-    $is_valid_user = authenticate_user($username, $password);
+    // Verifica se o usuário e senha são válidos
+    if ($username == $valid_username && $password == $valid_password) {
+        // Define a variável de sessão para indicar que o usuário está logado
+        $_SESSION["logged_in"] = true;
+        $_SESSION["username"] = $username;
 
-    if ($is_valid_user) {
-        // Iniciar a sessão do usuário
-        session_start();
-        $_SESSION["user_id"] = $is_valid_user["id"];
-        $_SESSION["user_name"] = $is_valid_user["name"];
-
-        // Redirecionar o usuário para a página inicial
-        header("Location: ../index.php");
-        exit;
+        // Redireciona para a página inicial ou outra página após o login
+        header("Location: index.php"); // Substitua com o redirecionamento desejado
+        exit();
     } else {
-        $error_message = "Usuário ou senha inválidos.";
+        // Caso as credenciais estejam incorretas, redireciona de volta para o login
+        header("Location: login.php?error=invalid_credentials"); // Página de login com mensagem de erro
+        exit();
     }
-}
-
-// Função para autenticar o usuário
-function authenticate_user($username, $password) {
-    // Código para autenticar o usuário com o banco de dados ou API
-    // Retornar um array contendo as informações do usuário autenticado, ou false se o login for inválido
-    return [
-        "id" => 1,
-        "name" => "John Doe"
-    ];
+} else {
+    // Se não foi enviado via POST, redireciona de volta para o formulário de login
+    header("Location: login.php");
+    exit();
 }
 ?>

@@ -1,113 +1,70 @@
+// Cores
+$cor-cinza-escuro: #333333;
+$cor-roxo-claro: #8e2de2;
+$cor-roxo-escuro: #4a00e0;
 
-$purple-start: #6b3ce6;
-$purple-end: #8e44ad; 
-$gray-bg: #a9a9a9;
-$white: #ffffff; 
-$orange: #ff8c00; 
-
-
+// Gradiente de Fundo
+$gradiente-fundo: linear-gradient(to bottom, $cor-roxo-claro, $cor-roxo-escuro);
+// Estilo Geral para Todas as Páginas
 body {
-    background: linear-gradient(to bottom right, $purple-start, $purple-end);
-    color: $white; /* Cor padrão para o texto */
+    background: $gradiente-fundo;
+    color: #fff; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    padding-top: 70px; /* Ajuste para o header fixo */
 }
 
-/* Estilizando a navegação (navbar) */
-.navbar {
-    background-color: $gray-bg; /* Fundo cinza */
+.container {
+    margin-top: 20px; /* Margem superior geral */
 }
 
-/* Estilizando links na navbar */
-.navbar-nav .nav-link {// Variáveis
-    $primary-color: #A9A9A9; // Cor primária para navbar e footer
-    $gradient-start: #FF4500; // Cor inicial do gradiente (laranja)
-    $gradient-end: #800080; // Cor final do gradiente (roxa)
-    $text-color-light: #FFFFFF; // Cor do texto clara
-    $text-color-accent: #FFA500; // Cor do texto alaranjada
-    $bg-color: linear-gradient(135deg, $gradient-start, $gradient-end); // Gradiente de fundo
-    
-    // Estilos Globais
-    body {
-        background: $bg-color;
-        color: $text-color-light;
-        font-family: Arial, sans-serif;
+.carousel {
+    max-width: 80%; /* Limita a largura do carousel */
+    margin: 0 auto; /* Centraliza o carousel */
+}
+
+// Estilização do Header e Footer
+.header {
+    background-color: $cor-cinza-escuro;
+    padding: 10px 0;
+}
+
+.footer {
+    background-color: $cor-cinza-escuro;
+    padding: 20px 0;
+}
+.card {
+    background-color: #fff; /* Fundo dos cards */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde conteúdo fora do limite do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+
+    &:hover {
+        transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra suave ao passar o mouse */
     }
-    
-    // Estilos da Navbar
-    .navbar {
-        background-color: $primary-color;
-        .navbar-brand, .navbar-nav .nav-link {
-            color: $text-color-light;
-            &:hover {
-                color: $text-color-accent;
-            }
-        }
+
+    .card-img-top {
+        border-radius: 8px 8px 0 0; /* Apenas borda superior arredondada */
     }
-    
-    // Estilos do Footer
-    footer {
-        background-color: $primary-color;
-        color: $text-color-light;
-        padding: 20px 0;
-        text-align: center;
-        .footer-icons {
-            a {
-                color: $text-color-light;
-                margin: 0 10px;
-                &:hover {
-                    color: $text-color-accent;
-                }
-            }
-        }
+
+    .card-body {
+        padding: 15px;
     }
-    
-    // Estilos dos Jogos
-    .game-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: none;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        .card-title, .card-text {
-            color: $text-color-light;
-        }
-        .btn-primary {
-            background-color: $text-color-accent;
-            border: none;
-            &:hover {
-                background-color: darken($text-color-accent, 10%);
-            }
-        }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
-    
-    // Estilos do Carrossel
-    .carousel-item {
-        img {
-            border-radius: 10px;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            filter: invert(100%);
-        }
-    }
-    
-    // Estilos para Botões
-    .btn-primary {
-        background-color: $text-color-accent;
-        border: none;
+
+    .btn {
+        background-color: $cor-roxo-claro;
+        border-color: $cor-roxo-claro;
+        color: #fff;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
         &:hover {
-            background-color: darken($text-color-accent, 10%);
+            background-color: $cor-roxo-escuro;
+            border-color: $cor-roxo-escuro;
         }
     }
-    
-    color: $white; /* Cor do texto branco */
-}
-
-/* Estilizando o rodapé */
-footer {
-    background-color: $gray-bg; /* Fundo cinza */
-    color: $white; /* Cor do texto branco */
-}
-
-/* Links no rodapé */
-footer a {
-    color: $orange; /* Cor do texto laranja para links */
 }

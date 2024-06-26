@@ -1,11 +1,21 @@
 <?php
-// Iniciar a sessão
+// Inicia a sessão
 session_start();
 
-// Destruir a sessão do usuário
-session_destroy();
+// Verifica se o usuário está logado
+if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) {
+    // Remove todas as variáveis de sessão
+    $_SESSION = array();
 
-// Redirecionar o usuário para a página inicial
-header("Location: ../index.php");
-exit;
+    // Invalida a sessão
+    session_destroy();
+
+    // Redireciona para a página de login ou outra página após o logout
+    header("Location: index.php"); // Substitua com o redirecionamento desejado
+    exit();
+} else {
+    // Se não estiver logado, redireciona para a página inicial ou outra página
+    header("Location: index.php");
+    exit();
+}
 ?>

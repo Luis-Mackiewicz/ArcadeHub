@@ -1,15 +1,8 @@
-# Ativar o uso do arquivo .htaccess
+# Ativa o mod_rewrite
 RewriteEngine On
+RewriteBase /
 
-# Definir o diretório base
-RewriteBase /arcadehub/
-
-# Redirecionar para index.php se a URL não corresponder a um arquivo existente
+# Redireciona todas as requisições não para arquivos existentes/diretórios para index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [L]
-
-# Bloquear acesso a arquivos de configuração
-<FilesMatch "\.(ini|env|log|json|md|yml|yaml|twig)$">
-    Require all denied
-</FilesMatch>
