@@ -1,35 +1,18 @@
+<!-- header.php -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArcadeHub</title>
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/path/to/your/custom/styles.css">
-    <style>
-        .login-box {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            padding: 20px;
-            background: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-        .login-box h5 {
-            margin-bottom: 20px;
-        }
-        .login-box .form-group {
-            margin-bottom: 15px;
-        }
-    </style>
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Estilos adicionais -->
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -50,22 +33,22 @@
             <div class="collapse navbar-collapse" id="navbarGames">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/bamboo_strike.php">Bamboo Strike</a>
+                        <a class="nav-link" href="paginas/bamboo_strike.php">Bamboo Strike</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="bomb_sword.php">Bomb Sword</a>
+                        <a class="nav-link" href="paginas/bomb_sword.php">Bomb Sword</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="bubble_kid.php">Bubble Kid</a>
+                        <a class="nav-link" href="paginas/bubble_kid.php">Bubble Kid</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="explosion_race.php">Explosion Race</a>
+                        <a class="nav-link" href="paginas/explosion_race.php">Explosion Race</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="desordeon.php">Desordeon</a>
+                        <a class="nav-link" href="paginas/desordeon.php">Desordeon</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="speed_bird.php">Speed Bird</a>
+                        <a class="nav-link" href="paginas/speed_bird.php">Speed Bird</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +56,7 @@
             <!-- Login -->
             <div class="nav-item ms-auto">
                 <a class="nav-link" href="#" onclick="showLoginBox()">
-                    <img src="/path/to/your/login-icon.png" width="30" height="30" alt="Login">
+                    <i class="fas fa-sign-in-alt"></i> Login
                 </a>
             </div>
         </div>
@@ -88,7 +71,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="login-process.php" method="POST">
+                    <form action="auth/atenticacao.php" method="POST">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
@@ -104,18 +87,12 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS e Scripts Customizados -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom Scripts -->
     <script src="assets/js/scripts.js"></script>
     <script>
         function showLoginBox() {
-            document.getElementById('loginBox').style.display = 'block';
-        }
-
-        function hideLoginBox() {
-            document.getElementById('loginBox').style.display = 'none';
+            document.getElementById('loginModal').style.display = 'block';
         }
     </script>
 </body>

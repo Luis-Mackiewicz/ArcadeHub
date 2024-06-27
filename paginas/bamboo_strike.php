@@ -1,6 +1,6 @@
 <?php
 // Inclui o cabeçalho (header.php)
-include_once "includes/header.php";
+include_once "fixos/header.php";
 ?>
 
 <!-- Conteúdo da Página -->
@@ -11,9 +11,9 @@ include_once "includes/header.php";
             <img src="assets/imagens/Bamboo_Strike/banner.png" class="img-fluid" alt="Banner do Bamboo Strike">
         </div>
         <div class="col-md-6">
-            <!-- Vídeo do Jogo -->
+            <!-- Vídeo do Jogo (corrigido para incorporação correta do YouTube) -->
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=_1pA8PIOY9o" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_1pA8PIOY9o" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -43,11 +43,11 @@ include_once "includes/header.php";
 
     <!-- Botão "Jogar" -->
     <div class="mt-4">
-        <a href="game/bamboo/index.html" class="btn btn-primary btn-lg">Jogar</a>
+        <a href="game/Bamboo/index.html" class="btn btn-primary btn-lg">Jogar</a>
     </div>
 </div>
 
 <?php
 // Inclui o rodapé (footer.php)
-include_once "./footer.php";
+include_once "fixos/footer.php";
 ?>
