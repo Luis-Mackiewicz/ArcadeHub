@@ -1,0 +1,45 @@
+// Define as cores principais
+$cor-roxo-claro: #a29bfe; // Exemplo de cor roxa clara
+$cor-roxo-escuro: #6c5ce7; // Exemplo de cor roxa escura
+
+// Estilização do card
+.card {
+    border-radius: 8px; // Bordas arredondadas
+    overflow: hidden; // Esconde conteúdo fora do limite do card
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Transição suave
+
+    &:hover {
+        transform: scale(1.05); // Aumenta o tamanho ao passar o mouse
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); // Sombra suave ao passar o mouse
+    }
+
+    // Estilização da imagem do topo do card
+    .card-img-top {
+        border-radius: 8px 8px 0 0; // Apenas borda superior arredondada
+    }
+
+    // Estilização do corpo do card
+    .card-body {
+        padding: 15px;
+    }
+
+    // Estilização do título do card
+    .card-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    // Estilização do botão
+    .btn {
+        background-color: $cor-roxo-claro;
+        border-color: $cor-roxo-claro;
+        color: #fff;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+
+        &:hover {
+            background-color: $cor-roxo-escuro;
+            border-color: $cor-roxo-escuro;
+        }
+    }
+}
