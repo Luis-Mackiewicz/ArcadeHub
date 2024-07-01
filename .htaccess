@@ -1,8 +1,7 @@
-# Ativa o mod_rewrite
 RewriteEngine On
-RewriteBase /
 
-# Redireciona todas as requisições não para arquivos existentes/diretórios para index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [L]
+# Redirecionar URLs amigáveis para os arquivos PHP apropriados
+RewriteRule ^jogo/([a-zA-Z0-9_-]+)/?$ pages/game.php?game=$1 [L,QSA]
+RewriteRule ^equipe/?$ pages/equipe.php [L,QSA]
+RewriteRule ^login/?$ pages/login.php [L,QSA]
+RewriteRule ^home/?$ pages/home.php [L,QSA]
