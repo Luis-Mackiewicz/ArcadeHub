@@ -30,9 +30,9 @@ body {
 
 a {
     color: $text-color;
-    text-decoration: none;  // Remover sublinhado padrão
+    text-decoration: none;
     &:hover {
-        text-decoration: none;  // Remover sublinhado ao passar o mouse
+        text-decoration: none;
     }
 }
 
@@ -41,27 +41,27 @@ header {
     background-color: $tertiary-color;
     .navbar {
         background: $tertiary-color;
-        color: $text-color; // cor do texto no header
+        color: $text-color;
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .navbar-brand {
-            font-size: 1.2rem; // tamanho da fonte reduzido
+            font-size: 1.2rem;
             font-weight: 700;
             text-decoration: none;
-            color: $text-color; // cor do texto na marca da navbar
-            transition: color 0.3s ease; // transição suave de cor
+            color: $text-color;
+            transition: color 0.3s ease;
             &:hover {
                 color: #666;
             }
         }
         .nav-link {
             font-size: 1rem;
-            color: $text-color; // cor do texto nos links da navbar
+            color: $text-color;
             margin-right: 20px;
             text-decoration: none;
-            transition: color 0.3s ease; // transição suave de cor
+            transition: color 0.3s ease;
             &:hover {
                 color: #666;
             }
@@ -72,34 +72,105 @@ header {
 // Estilos para o footer
 footer {
     background-color: $tertiary-color;
-    color: $text-color; // cor do texto no footer
-    padding: 20px 0; // espaçamento interno
+    color: $text-color;
+    padding: 20px 0;
     text-align: center;
     .footer-icon {
-        width: 30px; // tamanho médio das imagens
-        height: auto; // altura automática para manter proporção
-        margin: 0 15px; // margem das imagens
-        transition: transform 0.3s ease; // efeito de transição suave
+        width: 30px;
+        height: auto;
+        margin: 0 15px;
+        transition: transform 0.3s ease;
         &:hover {
-            transform: scale(1.1); // aumenta um pouco ao passar o mouse
+            transform: scale(1.1);
         }
     }
     .social-icons {
-        margin-bottom: 10px; // margem inferior
+        margin-bottom: 10px;
         a {
-            color: $text-color; // cor dos ícones no footer
-            font-size: 1.2rem; // tamanho da fonte
-            margin: 0 10px; // margem dos ícones
-            transition: color 0.3s ease; // transição suave de cor
+            color: $text-color;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
             &:hover {
                 color: #666;
             }
         }
     }
     .email {
-        font-size: 1rem; // tamanho da fonte
-        margin-top: 10px; // margem superior
+        font-size: 1rem;
+        margin-top: 10px;
     }
 }
 
-// Outros estilos conforme necessário...
+// Estilos para cards da equipe
+.team-card {
+    background-color: $card-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #666;
+    }
+}
+
+// Estilos para o modal de login
+#loginModal {
+    .modal-content {
+        background-color: $tertiary-color;
+        color: $text-color;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        background-color: $tertiary-color;
+    }
+
+    .modal-title {
+        color: $text-color;
+    }
+
+    .btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .btn-primary:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+    }
+
+    .form-label {
+        color: $text-color;
+    }
+
+    .form-control {
+        background-color: #495057; // fundo cinza escuro
+        color: $text-color; // texto branco
+    }
+
+    .form-control:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
+    }
+
+    .alert-danger {
+        background-color: #dc3545;
+        color: $text-color;
+        border-color: #dc3545;
+    }
+}

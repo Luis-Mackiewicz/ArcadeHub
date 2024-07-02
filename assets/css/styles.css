@@ -85,4 +85,62 @@ footer .email {
   margin-top: 10px;
 }
 
+.team-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.team-card .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.team-card .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+#loginModal .modal-content {
+  background-color: #343a40;
+  color: #ffffff;
+}
+#loginModal .modal-header {
+  border-bottom: none;
+  background-color: #343a40;
+}
+#loginModal .modal-title {
+  color: #ffffff;
+}
+#loginModal .btn-primary {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+#loginModal .btn-primary:hover {
+  background-color: #4d097e;
+  border-color: #4d097e;
+}
+#loginModal .form-label {
+  color: #ffffff;
+}
+#loginModal .form-control {
+  background-color: #495057;
+  color: #ffffff;
+}
+#loginModal .form-control:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 0 0.25rem rgba(106, 13, 173, 0.25);
+}
+#loginModal .alert-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-color: #dc3545;
+}
+
 /*# sourceMappingURL=styles.css.map */

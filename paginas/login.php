@@ -1,10 +1,10 @@
-<?php include_once "fixos/header.php"; ?>
+<?php include_once "../fixos/header.php"; ?>
 
 <main>
     <div class="container">
         <h2>Login</h2>
         <!-- Formulário de login -->
-        <form action="login-process.php" method="POST">
+        <form action="../autenticacao/login-process.php" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
@@ -24,5 +24,4 @@
     </div>
 </main>
 
-<?php include_once "fixos/footer.php"; ?>
-
+<?php include_once "../fixos/footer.php"; ?>
