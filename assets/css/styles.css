@@ -1,9 +1,8 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap");
 body {
   font-family: "Racing Sans One";
   background: linear-gradient(to right, #6a0dad, #ff7f00);
-  color: #343a40;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -15,185 +14,75 @@ body {
 }
 
 a {
-  color: #6a0dad;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
 }
 
-.navbar {
-  background: linear-gradient(to right, #6a0dad, #ff7f00);
-  color: #fff;
+header {
+  background-color: #343a40;
+}
+header .navbar {
+  background: #343a40;
+  color: #ffffff;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.navbar-brand {
-  font-size: 1.5rem;
+header .navbar .navbar-brand {
+  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
-.navbar-brand:hover {
-  color: #f0f0f0;
-}
-
-.nav-link {
-  font-size: 1rem;
-  color: #fff;
-  margin-right: 20px;
-  text-decoration: none;
-}
-.nav-link:hover {
-  text-decoration: none;
-}
-
-#carouselExampleControls {
-  margin-top: 20px;
-}
-#carouselExampleControls .carousel-item {
-  text-align: center;
-}
-#carouselExampleControls .carousel-item img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.card {
-  margin: 20px 0;
-  border: 1px solid #343a40;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.card .card-img-top {
-  max-width: 100%;
-  border-radius: 5px;
-}
-.card .card-body {
-  padding: 10px;
-}
-.card .card-body .card-title {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.card .card-body .card-text {
-  font-size: 1rem;
+header .navbar .navbar-brand:hover {
   color: #666;
 }
-.card .card-body .btn {
-  background-color: #6a0dad;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: all 0.3s ease;
+header .navbar .nav-link {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.card .card-body .btn:hover {
-  background-color: #4d097e;
+header .navbar .nav-link:hover {
+  color: #666;
 }
 
-.footer {
+footer {
   background-color: #343a40;
-  color: #fff;
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
-.footer .social-icons {
+footer .footer-icon {
+  width: 30px;
+  height: auto;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+footer .footer-icon:hover {
+  transform: scale(1.1);
+}
+footer .social-icons {
   margin-bottom: 10px;
 }
-.footer .social-icons a {
-  color: #fff;
-  font-size: 1.5rem;
+footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.2rem;
   margin: 0 10px;
+  transition: color 0.3s ease;
 }
-.footer .social-icons a:hover {
-  color: #f0f0f0;
+footer .social-icons a:hover {
+  color: #666;
 }
-.footer .email {
+footer .email {
   font-size: 1rem;
   margin-top: 10px;
-}
-
-.team-page {
-  padding: 20px;
-}
-.team-page .team-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.team-page .team-header h1 {
-  color: #6a0dad;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.team-page .team-header p {
-  font-size: 1.2rem;
-  color: #343a40;
-}
-.team-page .member-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-.team-page .member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-.team-page .member-card .member-info {
-  text-align: center;
-}
-.team-page .member-card .member-info .member-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #6a0dad;
-  margin-bottom: 10px;
-}
-.team-page .member-card .member-info .member-role {
-  font-size: 1.2rem;
-  color: #343a40;
-  margin-bottom: 15px;
-}
-.team-page .member-card .member-info .member-description {
-  font-size: 1rem;
-  color: #343a40;
-}
-.team-page .member-card .member-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer-icon {
-  width: 24px;
-  /* Ajuste o tamanho conforme necessário */
-  height: 24px;
-  /* Ajuste o tamanho conforme necessário */
-  margin: 0 10px;
-  /* Espaçamento entre os ícones */
-  transition: transform 0.2s;
-  /* Animação de transição ao passar o mouse */
-}
-
-.footer-icon:hover {
-  transform: scale(1.2);
-  /* Aumenta o ícone ao passar o mouse */
 }
 
 /*# sourceMappingURL=styles.css.map */

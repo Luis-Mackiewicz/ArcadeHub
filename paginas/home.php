@@ -14,20 +14,19 @@ include_once "../fixos/header.php";
 
 <!-- Conteúdo da página home -->
 <div class="container mt-4">
-    <!-- Conteúdo da página home -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php foreach ($games as $index => $game) : ?>
                 <div class="carousel-item <?php echo ($index === 0) ? 'active' : ''; ?>">
                     <a href="../paginas/<?php echo $game['slug']; ?>.php">
-                        <img src="<?php echo $game['main_image']; ?>" class="d-block w-100" alt="<?php echo $game['title']; ?>">
+                        <img src="<?php echo $game['main_image']; ?>" class="d-block w-100" alt="<?php echo $game['title']; ?>" style="max-height: 300px; object-fit: cover;">
                     </a>
                 </div>
                 <?php if (!empty($game['carousel_images']) && is_array($game['carousel_images'])) : ?>
                     <?php foreach ($game['carousel_images'] as $carousel_index => $carousel_image) : ?>
                         <div class="carousel-item">
                             <a href="../paginas/<?php echo $game['slug']; ?>.php">
-                                <img src="<?php echo $carousel_image; ?>" class="d-block w-100" alt="<?php echo $game['title']; ?>">
+                                <img src="<?php echo $carousel_image; ?>" class="d-block w-100" alt="<?php echo $game['title']; ?>" style="max-height: 300px; object-fit: cover;">
                             </a>
                         </div>
                     <?php endforeach; ?>

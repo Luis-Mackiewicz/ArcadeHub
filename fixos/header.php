@@ -11,10 +11,17 @@
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="../assets/imagens/arcade_hub.png">
+    <style>
+        /* Estilos específicos para o header */
+        .navbar {
+            background-color: #343a40; /* Cor de fundo */
+            color: #f8f9fa; /* Cor do texto */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="../index.php">
                     <img src="../assets/imagens/arcade_hub.png" width="30" height="30" class="d-inline-block align-top" alt="">
