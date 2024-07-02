@@ -15,7 +15,7 @@ $text-color: #343a40;         // texto principal
 // Estilos gerais
 body {
     font-family: $primary-font;
-    background-color: $primary-color;
+    background: linear-gradient(to right, $primary-color, $secondary-color);
     color: $text-color;
     margin: 0;
     padding: 0;
@@ -29,9 +29,9 @@ body {
 
 a {
     color: $primary-color;
-    text-decoration: none;
+    text-decoration: none;  // Remover sublinhado padrão
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;  // Remover sublinhado ao passar o mouse
     }
 }
 
@@ -61,12 +61,12 @@ a {
     margin-right: 20px;
     text-decoration: none;
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
 // Estilos para o carousel
-#gameCarousel {
+#carouselExampleControls {
     margin-top: 20px;
     .carousel-item {
         text-align: center;
@@ -78,9 +78,8 @@ a {
 }
 
 // Estilos para os cards dos jogos
-.game-card {
+.card {
     margin: 20px 0;
-    padding: 10px;
     border: 1px solid $tertiary-color;
     border-radius: 5px;
     transition: all 0.3s ease;

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap");
 body {
   font-family: "Racing Sans One";
-  background-color: #6a0dad;
+  background: linear-gradient(to right, #6a0dad, #ff7f00);
   color: #343a40;
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .navbar {
@@ -48,48 +48,47 @@ a:hover {
   text-decoration: none;
 }
 .nav-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-#gameCarousel {
+#carouselExampleControls {
   margin-top: 20px;
 }
-#gameCarousel .carousel-item {
+#carouselExampleControls .carousel-item {
   text-align: center;
 }
-#gameCarousel .carousel-item img {
+#carouselExampleControls .carousel-item img {
   max-width: 100%;
   border-radius: 5px;
 }
 
-.game-card {
+.card {
   margin: 20px 0;
-  padding: 10px;
   border: 1px solid #343a40;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.game-card:hover {
+.card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.game-card .card-img-top {
+.card .card-img-top {
   max-width: 100%;
   border-radius: 5px;
 }
-.game-card .card-body {
+.card .card-body {
   padding: 10px;
 }
-.game-card .card-body .card-title {
+.card .card-body .card-title {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.game-card .card-body .card-text {
+.card .card-body .card-text {
   font-size: 1rem;
   color: #666;
 }
-.game-card .card-body .btn {
+.card .card-body .btn {
   background-color: #6a0dad;
   color: #fff;
   border: none;
@@ -99,7 +98,7 @@ a:hover {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.game-card .card-body .btn:hover {
+.card .card-body .btn:hover {
   background-color: #4d097e;
 }
 
