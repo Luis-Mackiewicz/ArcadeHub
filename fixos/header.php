@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="../assets/imagens/arcade_hub.png" type="image/png">
+
 </head>
 <body>
     <!-- Navbar -->

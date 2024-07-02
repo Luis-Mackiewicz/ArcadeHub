@@ -8,12 +8,12 @@ include_once "fixos/header.php";
     <div class="row">
         <div class="col-md-6">
             <!-- Imagem Principal do Jogo -->
-            <img src="assets/imagens/Bamboo_Strike/banner.png" class="img-fluid" alt="Banner do Bamboo Strike">
+            <img src="assets/imagens/desordeon_images/banner.jpg" class="img-fluid" alt="Banner do Desordeon">
         </div>
         <div class="col-md-6">
-            <!-- Vídeo do Jogo (corrigido para incorporação correta do YouTube) -->
+            <!-- Vídeo do Jogo (Exemplo de Placeholder) -->
             <div class="embed-responsive embed-responsive-16by9">
-                <video class="embed-responsive-item" src="https://www.youtube.com/embed/_1pA8PIOY9o" allowfullscreen></video>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_video_id_" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -22,13 +22,13 @@ include_once "fixos/header.php";
     <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagens/bamboo_strike_images/f1.png" class="d-block w-100" alt="Primeira Imagem">
+                <img src="assets/imagens/desordeon_images/f1.png" class="d-block w-100" alt="Primeira Imagem">
             </div>
             <div class="carousel-item">
-                <img src="imagens/bamboo_strike_images/f2.png" class="d-block w-100" alt="Segunda Imagem">
+                <img src="assets/imagens/desordeon_images/f2.png" class="d-block w-100" alt="Segunda Imagem">
             </div>
             <div class="carousel-item">
-                <img src="imagens/bamboo_strike_images/f3.png" class="d-block w-100" alt="Terceira Imagem">
+                <img src="assets/imagens/desordeon_images/f3.png" class="d-block w-100" alt="Terceira Imagem">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -43,7 +43,7 @@ include_once "fixos/header.php";
 
     <!-- Botão "Jogar" -->
     <div class="mt-4">
-        <a href="game/Bamboo/index.html" class="btn btn-primary btn-lg">Jogar</a>
+        <a href="game/Desordeon/index.html" class="btn btn-primary btn-lg">Jogar</a>
     </div>
 </div>
 
